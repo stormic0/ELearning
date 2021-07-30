@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'embed_video',
     'memcache_status',
     'courses.apps.CoursesConfig',
@@ -135,3 +136,9 @@ CACHES = {
 CACHE_MIDDLEWARE_ALIAS = 'default'
 CACHE_MIDDLEWARE_SECONDS = 15*60
 CACHE_MIDDLEWARE_KEY_PREFIX = 'ELearning'
+
+REST_FRAMEWORK = {
+       'DEFAULT_PERMISSION_CLASSES': [
+         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+       ]
+}

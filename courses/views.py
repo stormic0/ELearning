@@ -28,7 +28,7 @@ class OwnerEditMixin(object):
 
 class OwnerCourseMixin(OwnerMixin, LoginRequiredMixin, PermissionRequiredMixin):
     model = Course
-    fields = 'subject', 'title', 'slug', 'overview'
+    fields = 'subject', 'title', 'overview'
     success_url = reverse_lazy('courses:manage_course_list')
 
 

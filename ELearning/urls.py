@@ -12,6 +12,7 @@ urlpatterns = [
     path('accounts/logout/', LogoutView.as_view(), name='logout'),
     path('course/', include('courses.urls', namespace='courses')),
     path('students/', include('students.urls', namespace='students')),
+    path('api/', include('courses.api.urls', namespace='courses_api')),
     path('', CourseListView.as_view(), name='course_list')
 ]
 
