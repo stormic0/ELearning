@@ -5,3 +5,5 @@ django-embed-video==1.4.0
 python-memcached==1.59.0
 django-memcache-status==2.2.0
 djangorestframework==3.12.4
+channels==2.4.0
+channels-redis==3.3.0
